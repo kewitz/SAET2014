@@ -1,4 +1,11 @@
 # -*- coding: utf-8 -*-
+"""
+The MIT License (MIT)
+Copyright (c) 2014 Leonardo Kewitz
+
+Exemplo de leitura e processamento de um arquivo CSV no Python. Neste exemplo
+um arquivo obtido no analisador de espéctro é lido, convertido e plotado.
+"""
 
 # Importa bibliotecas necessárias.
 from numpy import *

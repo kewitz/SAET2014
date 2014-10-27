@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-    Exemplo de aplicação da Lei de Ampère em um cabo coaxial achado no livro
-    "Engineering Electromagnetics" Hayt, W. 6a Edição pg. 234~236.
+The MIT License (MIT)
+Copyright (c) 2014 Leonardo Kewitz
+
+Exemplo de aplicação da Lei de Ampère em um cabo coaxial achado no livro
+"Engineering Electromagnetics" Hayt, W. 6a Edição pg. 234~236.
 """
 from numpy import *
 import matplotlib.pyplot as plt

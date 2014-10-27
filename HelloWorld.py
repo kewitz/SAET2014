@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Oct  1 16:56:14 2014
+The MIT License (MIT)
+Copyright (c) 2014 Leonardo Kewitz
 
-@author: leo
+Conjunto de exemplos de comandos simples no Python.
 """
 
 ##############    Tipos e variáveis   ##############
@@ -43,7 +44,7 @@ for i in range(10):
 
 for i, element in enumerate(vetor1):
     print "#%i: %s" % (i, element)
-    
+
 a = 0
 while a < 10:
     print a**2
@@ -62,3 +63,16 @@ greet("World")
 greet = lambda name: "Hello {0}!".format(name)
 # Imprime resultado da função lambda.
 print greet("World")
+
+
+##############    Programação Funcional   ##############
+
+# Define o vetor v = [5, 6, 7, 8, 9]
+v = range(5,10)
+# Retorna os elementos de v ao quadrado.
+print [i**2 for i in v]
+# Retorna o índice dos elementos em v que são maiores que 7
+print [i for i,a in enumerate(v) if a > 7]
+# Retorna as combinações entre v e o vetor [4, 5, 6, 7] sem repetições de
+# caracteres.
+print [(x, y) for x in v for y in [4, 5, 6, 7] if x != y]

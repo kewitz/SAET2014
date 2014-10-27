@@ -1,4 +1,11 @@
 # -*- coding: utf-8 -*-
+"""
+The MIT License (MIT)
+Copyright (c) 2014 Leonardo Kewitz
+
+Exemplo que mostra o funcionamento da modulação AM de um sinal senoidal.
+"""
+
 from numpy import *
 import matplotlib.pyplot as plt
 

@@ -1,4 +1,11 @@
 # -*- coding: utf-8 -*-
+"""
+The MIT License (MIT)
+Copyright (c) 2014 Leonardo Kewitz
+
+Exemplo de uma animação utilizando Matplotlib.
+"""
+
 # Importa bibliotecas necessárias.
 from numpy import *
 import matplotlib.pyplot as plt

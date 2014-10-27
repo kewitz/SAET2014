@@ -1,4 +1,13 @@
 # -*- coding: utf-8 -*-
+"""
+The MIT License (MIT)
+Copyright (c) 2014 Leonardo Kewitz
+
+Exemplo da aplicação da Lei de Biot-Savart em 2 condutores paralelos, permitindo
+analisar o campo resultante da corrente que passa nos condutores em ambas as di-
+reções.
+"""
+
 from numpy import *
 import matplotlib.pyplot as plt
 
@@ -28,7 +37,7 @@ for p in range(len(ps)):
 
     # Plota um ponto preto que simboliza a posição da linha
     plt.plot(p1[0], p1[1], 'ok')
-    
+
     # Iteração espacial no domínio criado.
     for i in range(ns):
         y = domain[i]

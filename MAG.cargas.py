@@ -1,4 +1,12 @@
 # -*- coding: utf-8 -*-
+"""
+The MIT License (MIT)
+Copyright (c) 2014 Leonardo Kewitz
+
+Exemplo de aplicação da Lei de Coulomb para determinar a intensidade do Campo
+Elétrico dado algumas cargas num plano.
+"""
+
 from numpy import *
 import matplotlib.pyplot as plt
 
@@ -25,7 +33,7 @@ for i in range(n):
     Ex = Ex + (X-x) * (E/mod)
     Ey = Ey + (Y-y) * (E/mod)
 
-# Calcula módulo do Campo Elétrico.    
+# Calcula módulo do Campo Elétrico.
 E = sqrt(Ex**2 + Ey**2)
 
 # Plota as linhas de campo.
