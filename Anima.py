@@ -13,7 +13,7 @@ import matplotlib.animation as animation
 
 # Cria vetores do domínio espaço e tempo.
 xd = linspace(0,2*pi,100)
-td = linspace(0,2*pi,100)
+td = linspace(0,10,300)
 
 # Cria um novo plot
 fig = plt.figure()

@@ -25,7 +25,7 @@ Hy = zeros((ns,ns))
 
 # Seta a posição das linhas que iremos utilizar no cálculo e suas correntes.
 ps = array([[1.2,0.0,1.0], [-1.2,0.0,1.0]])
-correntes = [1,1]
+correntes = [1,-1]
 
 # Para cada uma das linhas...
 for p in range(len(ps)):
@@ -34,9 +34,6 @@ for p in range(len(ps)):
 
     # I direção da corrente.
     I = [0,0,correntes[p]]
-
-    # Plota um ponto preto que simboliza a posição da linha
-    plt.plot(p1[0], p1[1], 'ok')
 
     # Iteração espacial no domínio criado.
     for i in range(ns):

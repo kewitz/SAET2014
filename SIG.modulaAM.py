@@ -44,7 +44,7 @@ plt.grid(True)
 
 # Plota sinal modulado.
 plt.subplot(313)
-plt.plot(t,yt)
-plt.plot(t,mt+1, '--r')
+l1, = plt.plot(t,yt)
+l2, = plt.plot(t,mt+1, '--r')
 plt.xticks(ticks,map(lambda t: "%.2fms"%(t*1E3), ticks), rotation=10)
 plt.grid(True)
