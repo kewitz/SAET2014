@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
 # Cria vetores do domínio espaço e tempo.
-xd = linspace(0,2*pi,100)
+xd = linspace(0,2*pi,300)
 td = linspace(0,10,300)
 
 # Cria um novo plot
@@ -22,7 +22,7 @@ frames = []
 
 # Calcula e adiciona os frames ao array.
 for t in td:
-    p1 = plt.plot(xd,sin(xd*t), 'r-.')
+    p1 = plt.plot(xd,sin(xd*t)*(cos(t)/2), 'r-')
     frames.append((p1))
 
 # Cria a animação.
