@@ -13,18 +13,18 @@ import matplotlib.pyplot as plt
 def ca(t, a=1.0):
     return a*sin(2*pi*1E6*t)
 # Função do Sinal Modulante:
-mo = lambda t, m=1.0: m*cos(2*pi*40E3*t)
+mo = lambda t, m=1.0: m*cos(2*pi*100E3*t)
 # Função do Sinal Modulado:
 y = lambda t, a=1.0, m=1.0: (1.0+mo(t,m))*ca(t,a)
 
 # Cria domínio do tempo
 t = linspace(0, (pi/2)/(40E3), 1000)
 # Seta as variáveis de amplitude e índice de modulação.
-a, m = (1, 1)
+a, m = (1, 1.3)
 # Cria o sinal da portadora.
 ct = ca(t)
 # Cria o sinal modulante.
-mt = mo(t)
+mt = mo(t,m)
 # Cria o sinal modulado.
 yt = y(t,a,m)
 

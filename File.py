@@ -40,6 +40,8 @@ plt.ylabel("Potência [dBm]")
 
 # Destaca algumas frequências conhecidas...
 plt.axvline(107.1E6, label="FURB", color="orange")
+plt.axvline(102.7E6, label="Atl.", color="red")
+plt.axvline(105.3E6, label="Diplo.", color="blue")
 
 # Plota legenda.
 plt.legend(fontsize="medium", fancybox=True, framealpha=.5, ncol=3, loc=9)

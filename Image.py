@@ -20,7 +20,8 @@ alt, lag, c = image.shape
 # Pega o primeiro canal (Red), desloca este canal 10 pixels para a esquerda.
 # Do décimo pixel em diante, seja a mesma informação contida do primeiro até a
 # largura-10.
-image[:,10:,0] = image[:,:-10,0]
+image[:,:,1] = zeros((alt,lag))
+image[:,:,2] = zeros((alt,lag))
 
 plt.subplot(211)
 # Plota imagem

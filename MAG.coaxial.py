@@ -9,10 +9,10 @@ Exemplo de aplicação da Lei de Ampère em um cabo coaxial achado no livro
 from numpy import *
 import matplotlib.pyplot as plt
 
-a = 1.0E-3  # Raio do condutor interno.
+a = 2.0E-3  # Raio do condutor interno.
 b = 3*a  # Raio do dielétrico.
 c = 4*a  # Raio do condutor externo.
-i = 1.0  # Corrente.
+i = .4  # Corrente.
 
 # Função que calcula H_phi levando em consideração o cabo coaxial.
 def Hphi(r):
